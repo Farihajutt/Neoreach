@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        .main {
+            height: max-content;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .navbar1 {
+            height: 40px;
+            width: 95%;
+            margin-left: 20px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            display: none;
+        }
+
+        .logo1 {
+            height: 50px;
+            width: 20%;
+        }
+
+        .bar {
+            height: 50px;
+            width: 50px;
+            position: relative;
+            right: 0;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .btn1 {
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            top: -10px;
+            right: 5px;
+            position: absolute;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tex2 {
+            color: white;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            height: max-content;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 30px;
+            width: 15%;
+            margin-top: 50px;
+        }
+
+        .navlist {
+            height: 40px;
+            width: 45%;
+            margin-top: 50px;
+            margin-left: 70px;
+            font-size: 14px;
+
+        }
+
+        .list {
+            list-style: none;
+            display: flex;
+            height: max-content;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        .list li {
+            padding-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .one {
+            color: rgba(0, 0, 0, 0.725);
+            text-decoration: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dropdown {
+            position: absolute;
+            height: 20px;
+            width: 0;
+            margin-top: 5px;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+            transition: .34s;
+
+        }
+
+        .one:hover .dropdown {
+            width: 100%;
+        }
+
+        .login {
+            height: 40px;
+            width: 5%;
+            margin-top: 50px;
+            margin-left: 80px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.725);
+        }
+
+        .button {
+            height: 50px;
+            width: 12%;
+            margin-top: 40px;
+            border-radius: 10px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            letter-spacing: 2px;
+            transition: 0.34s;
+            cursor: pointer;
+        }
+
+        .two {
+            color: white;
+
+        }
+
+        .button:hover {
+            background-color: black;
+        }
+
+        .button:hover .two {
+            background-color: black;
+            color: rgb(0, 200, 175);
+        }
+
+        .section1 {
+            height: max-content;
+            width: 95%;
+            margin-left: 5%;
+            margin-top: 180px;
+            display: flex;
+        }
+
+        .text {
+            height: 400px;
+            width: 35%;
+        }
+
+        .tex {
+            font-size: 35px;
+            color: #000000;
+            letter-spacing: 1px;
+            line-height: 50px;
+        }
+
+        .tex1 {
+            font-size: 18px;
+            color: #000000;
+            line-height: 30px;
+            margin-top: 25px;
+        }
+
+        .three {
+            height: 50px;
+            width: 120px;
+            position: relative;
+            margin-top: 60px;
+            margin-left: 80px;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .btn {
+            height: 60px;
+            width: 180px;
+            border-radius: 10px;
+            right: 5px;
+            position: absolute;
+            bottom: 15px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+
+        .tex2 {
+            color: white;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .tex2:hover {
+            color: rgb(0, 200, 175);
+        }
+
+        .image {
+            height: 400px;
+            width: 65%;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .animation1 {
+            height: 400px;
+            width: 50%;
+            position: absolute;
+            top: 0;
+            left: 170px;
+        }
+
+        .img1 {
+            height: 350px;
+            width: 350px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/hero-base1@2x.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+
+        }
+
+        .img3 {
+            height: 40px;
+            width: 160px;
+            right: 0;
+            top: 40px;
+            position: absolute;
+            animation: imagee 5s linear infinite;
+
+        }
+
+        .img33 {
+            height: 100%;
+            width: 100%;
+        }
+
+        @keyframes imagee {
+            0% {
+                top: 10px;
+            }
+
+            40% {
+                top: 0;
+            }
+
+            100% {
+                top: 10px;
+
+            }
+
+        }
+
+        .img4 {
+            height: 40px;
+            width: 160px;
+            bottom: 40px;
+            position: absolute;
+            animation: image 5s linear infinite;
+
+        }
+
+        .img44 {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        @keyframes image {
+            0% {
+                bottom: 10px;
+            }
+
+            40% {
+                bottom: 0;
+
+
+            }
+
+            100% {
+                bottom: 10px;
+
+            }
+
+        }
+
+        .img2 {
+            height: 160px;
+            left: -45px;
+            width: 160px;
+            top: 10px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/circle-orange@2x.png);
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+        }
+
+        .container {
+            height: 150px;
+            width: 730px;
+            position: relative;
+            top: 38%;
+            left: 10%;
+
+        }
+
+        .new {
+            height: 150px;
+            width: 580px;
+            margin-left: 150px;
+            position: absolute;
+            overflow: hidden;
+        }
+
+        .card {
+            height: 130px;
+            width: 100px;
+            position: absolute;
+            animation: slide2 6s linear infinite;
+            top: 10px;
+
+
+
+        }
+
+        @keyframes slide2 {
+            0% {
+                left: -20%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        .card1 {
+            animation-delay: 1s;
+        }
+
+        .card2 {
+            animation-delay: 2s;
+        }
+
+        .card3 {
+            animation-delay: 3s;
+        }
+
+        .card4 {
+            animation-delay: 4s;
+        }
+
+        .card5 {
+            animation-delay: 5s;
+        }
+
+        .card6 {
+            animation-delay: 6s;
+        }
+
+        .img5 {
+            height: 60px;
+            width: 100px;
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+        }
+
+        .img55 {
+            height: 90%;
+            width: 90%;
+        }
+
+        .img6 {
+            height: 30px;
+            width: 80px;
+            margin-left: 55px;
+            margin-top: -55px;
+            animation: horn 3s linear infinite;
+        }
+
+        @keyframes horn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .img66 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .animation2 {
+            height: 400px;
+            width: 45%;
+            position: absolute;
+            right: 40px;
+            top: 0;
+        }
+
+        .img7 {
+            height: 350px;
+            width: 350px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/hero-base2@2x.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            margin-left: 150px;
+            padding: 1px;
+        }
+
+        .searchbar {
+            height: 30px;
+            width: 260px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 150px;
+            position: relative;
+            border-radius: 35px;
+
+        }
+
+        .lines {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            border-radius: 35px;
+            background-color: rgb(117, 223, 252);
+        }
+
+        .dot {
+            height: 30px;
+            width: 1000px;
+            margin-top: 5px;
+        }
+
+        .border {
+            border-bottom: 1px solid;
+            width: 250px;
+            margin-top: 15px;
+            position: relative;
+
+        }
+
+        .lineimage {
+            height: 5px;
+            width: 100%;
+            top: -5px;
+            position: absolute;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/bar-dots.svg);
+            background-position: center;
+            background-size: cover;
+            animation: lines 13s linear infinite;
+        }
+
+        @keyframes lines {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: 100%;
+
+            }
+        }
+
+
+
+        .img8 {
+            height: 30px;
+            width: 150px;
+            position: absolute;
+            border-radius: 35px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/bar-bar@2x.png);
+            background-position: center;
+            background-size: cover;
+            z-index: 2;
+
+        }
+
+        .img11 {
+            height: 50px;
+            width: 70px;
+            position: absolute;
+            top: 80px;
+            left: 58px;
+            animation: bars 8s linear infinite;
+            overflow: hidden;
+        }
+
+        @keyframes bars {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+
+        .img111 {
+            width: 70px;
+        }
+
+        .img10 {
+            height: 120px;
+            width: 200px;
+            top: 10px;
+            position: absolute;
+            left: 18%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .img9 {
+            height: 50px;
+            width: 200px;
+            position: absolute;
+            top: 15%;
+            left: 20px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/graph-wave@2x.png);
+            background-position: center;
+            background-size: cover;
+            animation: rays 14s linear infinite;
+        }
+
+        @keyframes rays {
+            from {
+                right: 0;
+            }
+
+            to {
+                left: -100%;
+            }
+        }
+
+        .sites {
+            height: max-content;
+            width: 90%;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .airbnb {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-airbnb@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .amazon {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-amazon@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .newyork {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-nyt@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .honda {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-honda@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .walmart {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-walmart@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bet {
+            height: 40px;
+            width: 10%;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2019/04/logo-bet@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .para {
+            height: 300px;
+            width: 65%;
+            margin: auto;
+            margin-top: 280px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .goals {
+            font-size: 40px;
+            color: #000000;
+        }
+
+        .team {
+            font-size: 20px;
+            color: #000000;
+            line-height: 40px;
+            margin-top: 20px;
+        }
+
+        .green {
+            height: 50px;
+            width: 120px;
+            position: relative;
+            margin-top: 40px;
+            margin-left: 80px;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .btn2 {
+            height: 50px;
+            width: 130px;
+            border-radius: 10px;
+            right: 5px;
+            position: absolute;
+            bottom: 15px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .more {
+            color: white;
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .btn2:hover {
+            background-color: black;
+        }
+
+        .sextion2 {
+            height: 500px;
+            width: 85%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .textarea {
+            height: 100%;
+            width: 35%;
+
+        }
+
+        .element {
+            font-size: 13px;
+            color: #000000;
+        }
+
+        .e1 {
+            font-size: 25px;
+            color: #000000;
+            font-weight: bold;
+            margin-top: 20px;
+            line-height: 40px;
+        }
+
+        .e2 {
+            font-size: 15px;
+            line-height: 25px;
+            color: #000000;
+            margin-top: 30px;
+        }
+
+        .green1 {
+            height: 50px;
+            width: 120px;
+            position: relative;
+            margin-top: 60px;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .btn3 {
+            height: 50px;
+            width: 130px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 15px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn3:hover {
+            background-color: black;
+        }
+
+        .imagarea {
+            height: 85%;
+            width: 60%;
+            position: relative;
+        }
+
+        .imgareaa {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .phone {
+            height: 160px;
+            width: 120px;
+            position: absolute;
+            top: 150px;
+            left: 82px;
+        }
+
+        .phn {
+            height: 100%;
+            width: 100%;
+        }
+
+        .light {
+            height: 110px;
+            width: 170px;
+            position: absolute;
+            top: 60px;
+            left: 40px;
+        }
+
+        .lit {
+            height: 100%;
+            width: 100%;
+        }
+
+        .hand1 {
+            height: 280px;
+            width: 200px;
+            position: absolute;
+            top: 80px;
+            left: 110px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work1-photo1@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .hand2 {
+            height: 280px;
+            width: 220px;
+            position: absolute;
+            top: 40px;
+            right: 130px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/uploads/2021/09/work1-photo2@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .frame {
+            height: 280px;
+            width: 180px;
+            position: absolute;
+            top: 60px;
+            right: 0;
+        }
+
+        .frm {
+            height: 100%;
+            width: 100%;
+        }
+
+        .box {
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            margin-top: -20px;
+            left: 50px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work3-shape.svg);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .orange {
+            height: 230px;
+            width: 180px;
+            position: absolute;
+            right: 30px;
+            top: 60px;
+        }
+
+        .orng {
+            height: 100%;
+            width: 100%;
+        }
+
+        .bar {
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work4-mag.svg);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .arrow {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+        }
+
+        .para1 {
+            height: 300px;
+            width: 60%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .h1 {
+            font-size: 28px;
+            color: #000000;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .p1 {
+            font-size: 18px;
+            color: #000000;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .green2 {
+            height: 60px;
+            width: 210px;
+            position: relative;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+            margin: auto;
+            margin-top: 60px;
+        }
+
+
+        .btn4 {
+            height: 60px;
+            width: 200px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 15px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .btn4:hover {
+            background-color: black;
+        }
+        .section4{
+            height: 400px;
+            width: 100%;
+            position: relative;
+        }
+        .ygreen{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 0;
+            border-radius: 100%;
+            left: 10px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/circle-mixed@2x.png);
+            background-position: center;
+            background-size: cover;
+
+        }
+        .skin{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            background-image: url(https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/circle-orange@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+        .red{
+            position: absolute;
+            height: 300px;
+            width: 230px;
+            top: 20px;
+            right: 170px;
+        }
+        .beads{
+            height: 250px;
+            width: 320px;
+            position: absolute;
+            right: 100px;
+            top: 30px;
+
+
+        }
+        .heart{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 90px;
+            left: 390px;
+        }
+        .icons{
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            top: -70px;
+            left: 180px;
+        }
+        .blkhand{
+            height: 280px;
+            width: 170px;
+            position: absolute;
+            left: 540px;
+            top: 110px;
+        }
+         .blk{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            top: 150px;
+            left: 730px;
+        }
+        .blue{
+            height: 120px;
+            width: 120px;
+            position: absolute;
+            right: -90px;
+            top: 30px;
+        }
+        .paper{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: -50px;
+            bottom: -80px;
+
+        }
+        .hornn{
+            height: 50px;
+            width: 80px;
+            position: absolute;
+            left: 710px;
+            top: 90px;
+        }
+        .hrn{
+            height: 80px;
+            width: 220px;
+            position: absolute;
+            left: 325px;
+            bottom: 10px;
+        }
+        .sextion5{
+            height: 150px;
+            width: 90%;
+            margin: auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        .texx{
+            font-size: 28px;
+            color: #000000;
+            font-weight: bold;
+        }
+        .texx1{
+            color: #000000;
+            font-size: 18px;
+            line-height: 30px;
+            top: 60px;
+            position: absolute;
+        }
+        .green3 {
+            height: 50px;
+            width: 210px;
+            position: absolute;
+            right: 0;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+            top: 50px;
+        }
+
+
+        .btn5 {
+            height: 50px;
+            width: 190px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 10px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .studio{
+            color: white;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px ;
+        }
+
+        .btn5:hover {
+            background-color: black;
+        }
+       
+
+
+
+
+
+        /* ..... /////media queries....///// */
+        @media screen and (max-width:990px) {
+            .main{
+                border: 3px solid red;
+            }
+            .navbar {
+                display: none;
+
+            }
+
+            .navbar1 {
+                display: block;
+            }
+
+            .bar {
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                right: 10px;
+                top: 30px;
+            }
+            .section1{
+                margin: 0;
+                width: 100%;
+                display: block;
+
+
+            }
+            .text{
+                height: 350px;
+                margin-top: 40px;
+                width: 100%;
+            }
+            .image{
+                width: 100%
+            }
+            .tex{
+                font-size: 25px;
+                line-height: 30px;
+                text-align: center;
+            }
+            .tex1{
+                font-size: 15px;
+                text-align: center;
+            }
+            .btn{
+                width: 150px;
+                height: 40px;
+            }
+            .three{
+                margin: auto;
+                margin-top: 30px;
+            }
+            .animation1{
+                height: 300px;
+                width: 30%;
+                left: 240px;
+            }
+            .img1{
+                height: 200px;
+                width: 200px;
+                top: 80px;
+                left: -30px;
+            }
+            .img2{
+                height: 100px;
+                width: 100px;
+                top: 60px;
+            }
+            .img3{
+                height: 30px;
+                width: 100px;
+            }
+            .img4{
+                height: 30px;
+                width: 100px;
+            }
+            .img5{
+                width: 50px;
+                height: 30px;
+
+            }
+            .img6{
+                height: 20px;
+                width: 50px;
+                margin-left: 25px;
+                margin-top: -30px;
+            }
+            .container{
+                height: 100px;
+                width: 400px  !important;
+                left: 100px;
+            }
+            .new{
+                width: 580px;
+              
+            }
+            .card{
+                height: 80px;
+                width: 80px;
+            }
+            .dot{
+                width: 100px;
+            }
+            .lineimage{
+                width: 100px;
+
+            }
+           
+            .animation2{
+                right: 250px;
+                height: 300px;
+                width: 30%;
+            }
+            .img7{
+                height: 200px;
+                width: 200px;
+                top: 80px;
+
+            }
+            .img11{
+                top: 0;
+                width: 40px;
+                top: 45px;
+                left: 35px;
+            }
+            .img111{
+                width: 40px;
+            }
+            .img10{
+                top: 0;
+                height: 60px;
+                width: 80px;
+            }
+            .border{
+                width: 125px;
+                top: -5px;
+
+            }
+            .searchbar{
+                height: 20px;
+                width: 130px;
+                margin-top: 80px;
+
+            }
+            .img8{
+                height: 20px;
+                width: 50px;
+            }
+            .para{
+                width:70% ;
+            }
+            .goals{
+                font-size: 25px;
+            }
+            .team{
+                font-size: 14px;
+                text-align: center;
+                line-height: 25px;
+            }
+            .sextion2{
+                width: 100%;
+            }
+            .textarea{
+                width: 25%;
+                margin-left: 20px;
+            }
+            .e2{
+                font-size: 14px;
+            }
+            .imagarea{
+                width:60%;
+                height: 300px;
+                margin-top: 140px;
+            }
+            .hand1{
+                height: 150px;
+                width: 150px;
+                left: 70px;
+            }
+            .hand2{
+                height: 150px;
+                width: 150px;
+                right: 90px;
+            }
+            .phone{
+                /* left: 60px; */
+                top: 100px;
+            }
+            .phn{
+                height: 150px;
+                width: 100px;
+
+            }
+            .light{
+                top: 20px;
+                
+            }
+            .para1{
+                width: 70%;
+                height: 300px;
+                margin-top: 200px;
+                width: 80%;
+            }
+            .h1{
+                font-size: 25px;
+            }
+            .p1{
+                font-size: 14px;
+            }
+            .texx{
+                font-size: 25px;
+            }
+            .texx1{
+                font-size: 14px;
+            }
+            .section4{
+                width: 100%;
+                margin-top: 100px;
+            }
+            .beads{
+                width: 150px;
+                height: 150px;
+
+            }
+            .heart{
+                left: 130px;
+            }
+            .skin{
+                right: 0;
+                height: 120px;
+                width: 120px;
+            }
+            .red{
+                height: 150px;
+                width: 130px;
+                right: 50px;
+            }
+            .icons{
+                left: 60px;
+                height: 190px;
+                width: 190px;
+
+            }
+            .blkhand{
+                left: 300px;
+                height: 200px;
+                width: 150px;
+
+            }
+            .blk{
+                left: 450px;
+
+            }
+            .hornn{
+                left: 450px;
+            }
+            .frame{
+                height: 180px;
+                width: 120px;
+                right: 20px;
+
+            }
+            .green1{
+                margin-top: 30px;
+            }
+
+        }
+        @media screen and (max-width:700px){
+            .paper{
+                right: 0;
+                
+            }
+            .image{
+                border: 1px solid;
+            }
+            .img1{
+                left: -100px;
+            }
+            .blkhand{
+                margin-left: -50px;
+            }
+            .blk{
+                /* right: 150px; */
+            }
+
+
+
+        }
+        @media screen and (max-width:660px){
+            .skin{
+                right: 80px;
+
+            }
+            .paper{
+                left: 0;
+            }
+            .blue{
+                right: 20px;
+            }
+            .blk{
+                top: 100px;
+
+            }
+        }
+        @media screen and (max-width:570px){
+            .skin{
+                top:-20px ;
+            }
+            .red{
+                top: 0;
+            }
+            .paper{
+                left: -40px;
+            }
+            .blue{
+                right: 80px;
+            }
+        }
+        @media screen and (max-width:565px){
+            .heart{
+                top: 0;
+
+            }
+            .blkhand{
+                left: 200px;
+                top: 100px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar1">
+            <div class="logo1">
+                <img src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/logo.svg" alt="">
+            </div>
+            <div class="bar">
+                <div class="btn1">
+                    <p class="tex12"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="logo">
+                <img src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/logo.svg" alt="">
+            </div>
+            <div class="navlist">
+                <ul class="list">
+                    <li><a class="one" href="">Solutions
+                            <div class="dropdown"></div>
+                        </a>
+                    </li>
+                    <li><a class="one" href="">Services
+                            <div class="dropdown"></div>
+                        </a></li>
+                    <li><a class="one" href="">Case Studies
+                            <div class="dropdown"></div>
+                        </a></li>
+                    <li><a class="one" href="">Pricing
+                            <div class="dropdown"></div>
+                        </a></li>
+                    <li><a class="one" href="">Resources
+                            <div class="dropdown"></div>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="login">Login</div>
+            <div class="button">
+                <p class="two">GET STARTED</p>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="text">
+                <h1 class="tex">Run World Class <br> Influencer Marketing <br> Campaigns.</h1>
+                <p class="tex1">NeoReach enables world class original <br>
+                    influencer campaigns for leading brands <br>
+                    and Global Fortune 500s.</p>
+                <div class="three">
+                    <div class="btn">
+                        <p class="tex2">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <div class="container">
+                    <div class="new">
+                        <div class="card card1 ">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                        <div class="card card2">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                        <div class="card card3">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                        <div class="card card4">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                        <div class="card card5">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                        <div class="card card6">
+                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/card-girl@2x.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="animation1">
+                    <div class="img1">
+                        <div class="img3">
+                            <img class="img33"
+                                src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/talk-bubble@2x.png"
+                                alt="">
+                        </div>
+                        <div class="img4">
+                            <img class="img44"
+                                src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/talk-bubble@2x.png"
+                                alt="">
+                        </div>
+                        <div class="img5">
+                            <img class="img55"
+                                src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/bullhorn@2x.png"
+                                alt="">
+                            <div class="img6">
+                                <img class="img66"
+                                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/horn-lines.svg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img2"></div>
+                </div>
+                <div class="animation2">
+                    <div class="img7">
+                        <div class="img11">
+                            <img class="img111"
+                                src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/parts/graph-up.svg"
+                                alt="">
+                        </div>
+                        <div class="searchbar">
+                            <div class="lines">
+                                <div class="img8"></div>
+                                <div class="dot">
+                                    <div class="border">
+                                        <div class="lineimage"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img10">
+                            <div class="img9"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sites">
+            <div class="airbnb"></div>
+            <div class="amazon"></div>
+            <div class="newyork"></div>
+            <div class="honda"></div>
+            <div class="walmart"></div>
+            <div class="bet"></div>
+        </div>
+        <div class="para">
+            <h1 class="goals">Leading Global Influencer Platform</h1>
+            <p class="team">Our team integrates with yours to ensure proactive, real-time communication, while creating
+                <br> authentic, data-driven campaigns that get to the heart and soul of your brand story.
+            </p>
+            <div class="green">
+                <div class="btn2">
+                    <p class="more">LEARN MORE</p>
+                </div>
+            </div>
+        </div>
+        <div class="sextion2">
+            <div class="textarea">
+                <p class="element">ACCESS</p>
+                <p class="e1">Connected Network <br>
+                    Of Influencers</p>
+                <p class="e2">Years of executing campaigns have helped us shape <br> strong direct relationships with
+                    influencers, bloggers, and <br> other creators. Coupled with our data-backed insights into <br> key
+                    demographics and KPI’s, we not only ensure the <br> perfect fit - but the perfect relationship.</p>
+                <div class="green1">
+                    <div class="btn3">
+                        <p class="more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagarea">
+                <img class="imgareaa"
+                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work-illus1@2x.png"
+                    alt="">
+                <div class="hand1" data-aos="fade-up-right" data-aos-duration="1000"></div>
+                <div class="hand2" data-aos="fade-up-left" data-aos-duration="1000"></div>
+            </div>
+        </div>
+        <div class="sextion2">
+            <div class="imagarea">
+                <img class="imgareaa"
+                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work-illus2@2x.png"
+                    alt="">
+                <div class="phone" data-aos="fade-up" data-aos-duration="1000">
+                    <img class="phn"
+                        src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work2-photo1@2x.png"
+                        alt="">
+                </div>
+                <div class="light">
+                    <img class="lit"
+                        src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work2-bubble@2x.png"
+                        alt="">
+                </div>
+            </div>
+            <div class="textarea">
+                <p class="element">CREATE</p>
+                <p class="e1">Creative Strategy & Direction</p>
+                <p class="e2">We infuse your brand’s core messaging into everything we <br> produce by working alongside
+                    the talent to create <br> authentic, story-driven content that lives beyond the <br> campaign. We
+                    create key strategy points, geared toward <br> distribution and promotion, optimized for brand <br>
+                    recognition and conversion.</p>
+                <div class="green1">
+                    <div class="btn3">
+                        <p class="more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sextion2">
+            <div class="textarea">
+                <p class="element">MANAGE</p>
+                <p class="e1">Contracting & Activation</p>
+                <p class="e2">Talent acquisition and management are key to a <br> successful campaign. We manage the
+                    entire contracting <br> and negotiating process - including pricing strategy, legal <br> contracts,
+                    compliance, and everything in between. From <br> campaign deliverables to final payment, we’ve got
+                    it <br> covered.</p>
+                <div class="green1">
+                    <div class="btn3">
+                        <p class="more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagarea">
+                <img class="imgareaa"
+                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work-illus3@2x.png"
+                    alt="">
+                <div class="frame" data-aos="fade-up" data-aos-duration="1000">
+                    <img class="frm"
+                        src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work3-photo1@2x.png"
+                        alt="">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sextion2">
+            <div class="imagarea">
+                <img class="imgareaa"
+                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work-illus4@2x.png"
+                    alt="">
+                <div class="orange" data-aos="fade-up" data-aos-duration="1000">
+                    <img class="orng"
+                        src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work4-photo1@2x.png"
+                        alt="">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="textarea">
+                <p class="element">AMPLIFY</p>
+                <p class="e1">Paid Media</p>
+                <p class="e2">Syndicate influencer content with an experienced <br> approach to user acquisition and
+                    paid media. Our team <br>
+                    will define ad auctions, budget allocations, offers, copy, <br> creative and more, all on the basis
+                    of ROI-across all major <br> ad auctions and channels including Facebook®, <br> Instagram®, Google®,
+                    TikTok®, Snapchat® and more. <br></p>
+                <div class="green1">
+                    <div class="btn3">
+                        <p class="more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sextion2">
+            <div class="textarea">
+                <p class="element">INTEGRATE</p>
+                <p class="e1">Self-Service <br>
+                    Software & APIs
+                </p>
+                <p class="e2">Syndicate influencer content with an experienced <br> approach to user acquisition and
+                    paid media. Our team <br>
+                    will define ad auctions, budget allocations, offers, copy, <br> creative and more, all on the basis
+                    of ROI-across all major <br> ad auctions and channels including Facebook®, <br> Instagram®, Google®,
+                    TikTok®, Snapchat® and more. <br></p>
+                <div class="green1">
+                    <div class="btn3">
+                        <p class="more">LEARN MORE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imagarea">
+                <img class="imgareaa"
+                    src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/pricing/pricing-brands-bot@2x.png"
+                    alt="">
+                <div class="arrow">
+                    <img class="imgareaa"
+                        src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/pricing/pricing-brands-top@2x.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="para1">
+            <p class="h1">Everything your team needs in one package.</p>
+            <p class="p1">Whether you are looking for a YouTube superstar or an Instagram micro-influencer, <br> you’re
+                in good company. Sign up today and see why NeoReach has managed over <br> $250 million worth of
+                influencer marketing campaigns to date.</p>
+            <div class="green2">
+                <div class="btn4">
+                    <p class="more">GET STARTED TODAY!</p>
+                </div>
+            </div>
+        </div>
+        <div class="section4">
+            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-bgdots.svg" alt="">
+             <div class="ygreen"></div>
+            <div class="skin">
+                <div class="red" data-aos="fade-up-right" data-aos-duration="3000">
+                    <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/services/work1-photo1@2x.png" alt="">
+                </div>
+            </div>
+            <div class="heart" data-aos="fade-up-left" data-aos-duration="2000">
+                <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-sm-photo1@2x.png" alt="">
+                <div class="beads">
+                    <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-photo1@2x.png" alt="">
+                    <div class="icons">
+                        <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-boxes@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="blkhand" data-aos="fade-up">
+                <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/uploads/2021/09/package-photo2@2x.png" alt="">
+            </div>
+            <div class="blk" data-aos="fade-up" data-aos-duration="3000">
+                <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-sm-photo2@2x.png" alt="">
+                <div class="blue">
+                    <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-sm-photo3@2x.png" alt="">
+                    <div class="paper">
+                        <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-paper@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="hornn">
+                <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-horn2@2x.png" alt="">
+            </div>
+            <div class="hrn">
+                <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/home/parts/package-horn1@2x.png" alt="">
+            </div>
+        </div>
+        <div class="sextion5">
+            <p class="texx">See what our clients are saying.</p>
+            <p class="texx1">See how top brands are successfully using NeoReach to activate, <br> manage, and track influencer marketing campaigns at scale.</p>
+            <div class="green3">
+                <div class="btn5">
+                    <p class="studio">SEE ALL CASE STUDIES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

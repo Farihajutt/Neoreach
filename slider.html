@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+         .maiin{
+            height: 655px;
+            width: 1060px;
+            /* border: 5px solid rebeccapurple; */
+            margin: auto;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .slider{
+            height:655px;
+            width:3180px;
+            /* border: 2px solid red; */
+            position: absolute;
+            /* animation: slide 9s linear infinite; */
+            display: flex;
+        }
+        .slide1{
+            height: 655px;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+        }
+          .slide2{
+            height: 655px;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between;
+        }
+          .slide3{
+            height: 655px;
+            width: 1060px;
+            display: flex;
+            justify-content: space-between; 
+        }
+        .slides{
+            height: 655px;
+            width: 31%;
+            display: flex;
+            justify-content: space-between;
+
+         } 
+         .s1{
+            height: 630px;
+            width: 95%;
+            background-color: rgb(243,245,246);
+            margin-left: 10%;
+            margin-top:20px ;
+            border-radius: 35px;
+            position: relative;
+         }
+         .s1img{
+            height: 650px;
+            width: 100%;
+            left: -10%;
+            top: -20px;
+            position: absolute;
+            background-color: white;
+            border-radius: 25px;
+            border: 1px solid;
+         }
+         .logoimg{
+            height: 150px;
+            width: 150px;
+            margin: auto;
+            margin-top: 10px;
+         }
+         .neopara{
+            height: max-content;
+            width: 100%;
+            margin-top: 30px;
+         }
+         .one{
+            text-align: center;
+            font-size: 14px;
+            color: #000000;
+            line-height: 25px;
+         }
+         .brdrbottom{
+            width: 90%;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.284);
+            margin: auto;
+            margin-top: 40px;
+
+         }
+         .two{
+            height: 130px;
+            width: 90%;
+            /* border: 1px solid; */
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+         }
+         .two1{
+            height: 100%;
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+         }
+         .brdr{
+            height: 210px;
+            border-right: 1px solid rgba(0, 0, 0, 0.284);
+         }
+         .bluelines{
+            height: 80px;
+            width: 80px;
+            margin-top: 20px;
+         }
+          .blueliness{
+            height: 80px;
+            width: 80px;
+            margin-top: 20px;
+         }
+         .two3{
+            font-size: 25px;
+            color: #000000;
+            font-weight: bold;
+         }
+         .two2{
+            height: 100%;
+            width: 48%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+         
+         }
+         .two4{
+            margin-left: 30px;
+            display: inline;
+            font-size: 12px;
+         }
+         .two5{
+            display: inline;
+            margin-left: 50px;
+            font-size: 12px;
+         }
+         .borderbtm{
+            width: 90%;
+            border-bottom: 1px solid  rgba(0, 0, 0, 0.284);
+            margin: auto;
+            margin-top: 30px;
+         }
+         .borderbtm1{
+            width: 90%;
+            border-bottom: 1px solid  rgba(0, 0, 0, 0.284);
+            margin: auto;
+            margin-top: 30px;
+         }
+         .imgareaa{
+            height: 100%;
+            width: 100%;
+         }
+         .green1 {
+            height: 50px;
+            width: 120px;
+            position: relative;
+            margin: auto;
+            margin-top: 60px;
+            background-image: url(https://neoreach.com/wp-content/themes/neoreach-2022/images/ornaments/underline@2x.png);
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        .btn3 {
+            height: 50px;
+            width: 130px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 15px;
+            background-color: rgb(0, 200, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .more{
+            font-size: 12px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .btn3:hover {
+            background-color: black;
+        }
+         @keyframes slide{
+            0%{
+                margin-left: 0;
+
+            }
+            30%{
+                margin-left: 0;
+                
+
+            }
+            31%{
+                margin-left: -1060px;
+               
+
+            }
+            60%{
+                margin-left: -1060px;
+              
+
+            }
+            61%{
+                margin-left: -2120px;
+               
+
+            }
+            80%{
+                margin-left: -2120px;
+               
+            }
+            81%{
+                margin-left: -3180px;
+
+            }
+            100%{
+                margin-left: -3180px;
+
+            }
+         }
+
+
+    </style>
+</head>
+<body>
+            <div class="maiin">
+            <div class="slider">
+                <div class="slide1">
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img">
+                                <div class="logoimg">
+                                    <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/uploads/2023/01/sams-club-logo-black-and-white.png" alt="">
+                                </div>
+                                <div class="neopara">
+                                    <p class="one">How NeoReach helped promote brand awareness and capitalize on Sam's Club's limited time offer.</p>
+                                </div>
+                                <div class="brdrbottom"></div>
+                                <div class="two">
+                                    <div class="two1">
+                                        <div class="bluelines">
+                                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/case-studies/cs-icon-graph.svg" alt="">
+                                        </div>
+                                        <p class="two3">2.5M</p>
+                                    </div>
+                                    <div class="brdr"></div>
+                                    <div class="two2">
+                                        <div class="blueliness">
+                                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/case-studies/cs-icon-talk.svg" alt="">
+                                        </div>
+                                        <p class="two3">15.1M</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="borderbtm"></div>
+                                <p class="two4">Total Impression</p>
+                                <p class="two5">Total Engagements</p>
+                                <div class="borderbtm1"></div>
+                                <div class="green1">
+                                    <div class="btn3">
+                                        <p class="more">LEARN MORE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img">
+                                <div class="logoimg1">
+                                    <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/uploads/2023/01/sams-club-logo-black-and-white.png" alt="">
+                                </div>
+                                <div class="neopara">
+                                    <p class="one">How NeoReach helped promote brand awareness and capitalize on Sam's Club's limited time offer.</p>
+                                </div>
+                                <div class="brdrbottom"></div>
+                                <div class="two">
+                                    <div class="two1">
+                                        <div class="bluelines1">
+                                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/case-studies/cs-icon-graph.svg" alt="">
+                                        </div>
+                                        <p class="two3">2.5M</p>
+                                    </div>
+                                    <div class="brdr"></div>
+                                    <div class="two2">
+                                        <div class="blueliness1">
+                                            <img class="imgareaa" src="https://neoreach.wpenginepowered.com/wp-content/themes/neoreach-2022/images/case-studies/cs-icon-talk.svg" alt="">
+                                        </div>
+                                        <p class="two3">15.1M</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="borderbtm"></div>
+                                <p class="two4">Total Impression</p>
+                                <p class="two5">Total Engagements</p>
+                                <div class="borderbtm1"></div>
+                                <div class="green1">
+                                    <div class="btn3">
+                                        <p class="more">LEARN MORE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img">
+                                <div class="logoimg2">
+                                    <img class="imgareaa" src="" alt="">
+                                </div>
+                                <div class="neopara">
+                                    <p class="one">How NeoReach helped promote brand awareness and capitalize on Sam's Club's limited time offer.</p>
+                                </div>
+                                <div class="brdrbottom"></div>
+                                <div class="two">
+                                    <div class="two1">
+                                        <div class="bluelines2">
+                                            <img class="imgareaa" src="" alt="">
+                                        </div>
+                                        <p class="two3">2.5M</p>
+                                    </div>
+                                    <div class="brdr"></div>
+                                    <div class="two2">
+                                        <div class="blueliness2">
+                                            <img class="imgareaa" src="" alt="">
+                                        </div>
+                                        <p class="two3">15.1M</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="borderbtm"></div>
+                                <p class="two4">Total Impression</p>
+                                <p class="two5">Total Engagements</p>
+                                <div class="borderbtm1"></div>
+                                <div class="green1">
+                                    <div class="btn3">
+                                        <p class="more">LEARN MORE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide2">
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                    <div class="slides">
+                        <div class="s1">
+                            <div class="s1img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
